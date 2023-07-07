@@ -1,0 +1,417 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+.bg-admin{
+    background: vars.$clr-black;
+}
+
+.pos-icona{
+    line-height: 24px;
+    margin-top: 54px;
+}
+
+.ba-icon{
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, 70px, vars.$clr-white);
+    text-decoration: none;
+}
+
+.ra-icon{
+    @include mixins.set-font(vars.$ff-secondary, vars.$fw-sbold, 33px, vars.$clr-white);
+}
+
+.user-admin{
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-reg, 22px, vars.$clr-white);
+    margin-top: 68px;
+    margin-right: 20px;
+}
+
+.admin-icon{
+    width: 85px;
+    height: 85px;
+    margin-top: 40px;
+    border-radius: 48px;
+}
+
+.btn-admin{
+    width: 323px;
+    height: 70px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-reg, 22px, vars.$clr-white);
+    background: vars.$clr-cian;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 64px;
+    border: none;
+}
+
+.gap-admin{
+    height: 80%;
+    gap: 78px;
+}
+
+.sz-menu{
+    height: 100vh;
+}
+
+.arrow-back{
+    width: 40px;
+    height: 40px;
+    font-size: 40px !important;
+    color: vars.$clr-white;
+    margin-left: -5px;
+}
+
+.title-add{
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, 35px, vars.$clr-white);
+    width: 200px;
+    margin-top: 33px;
+}
+
+.title-edit{
+    width: 160px !important;
+}
+
+.pos-add{
+    line-height: 24px;
+    margin-top: 40px;
+}
+
+.label-add{
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, vars.$fs-18, vars.$clr-cian);
+    width: 173px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.w-form{
+    width: 100%;
+}
+
+.mt-form{
+    margin-top: 40px;
+}
+
+.section-info{
+    display: grid;
+}
+
+.custom-info{
+    width: 396px;
+    height: 48px;
+    border-radius: 15px;
+    background: vars.$clr-white-blue;
+    padding: 5px;
+    border: none;
+    color: vars.$clr-black;
+}
+
+.custom-drop{
+    width: 173px;
+    height: 48px;
+    border-radius: 15px;
+    background: vars.$clr-white-blue;
+    padding-left: 4px;
+    padding-right: 32px;
+    border: none;
+    color: vars.$clr-cian;
+    text-align: center;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, vars.$fs-15, vars.$clr-cian);
+}
+
+.inp-amount{
+    width: 70px;
+    height: 48px;
+    border-radius: 15px 0 0 15px;
+    background: vars.$clr-white-blue;
+    padding-bottom: 2px;
+    border: none;
+    color: vars.$clr-cian;
+    text-align: center;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, vars.$fs-15, vars.$clr-cian);
+    appearance: textfield;
+}
+
+.inp-amount::-webkit-inner-spin-button,
+.inp-amount::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.drop-msu{
+    width: 80px;
+    height: 48px;
+    border-radius: 0px;
+    background: vars.$clr-cian;
+    padding-left: 4px;
+    padding-right: 32px;
+    border: none;
+    color: vars.$clr-cian;
+    text-align: center;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-reg, vars.$fs-15, vars.$clr-white-blue);
+}
+
+.drop-ing{
+    //width: 233px;
+    width: 198px;
+    height: 48px;
+    border-radius: 0px;
+    background: vars.$clr-white-blue;
+    padding-left: 4px;
+    padding-right: 32px;
+    border: none;
+    color: vars.$clr-cian;
+    text-align: center;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, vars.$fs-15, vars.$clr-cian);
+}
+
+.custom-input{
+    width: 155px;
+    height: 48px;
+    border-radius: 15px 0 0 15px;
+    background: vars.$clr-white-blue;
+    padding: 5px;
+    border: none;
+    color: vars.$clr-black;
+    text-align: center;
+}
+
+.bg-btns{
+    width: 18px;
+    height: 48px;
+    background: vars.$clr-cian;
+    border-radius: 0 15px 15px 0;
+}
+
+.btn-input{
+    background: transparent;
+    border: none;
+    width: 18px;
+    height: 24px;
+    padding: 0;
+    padding-bottom: 2px !important;
+}
+
+.icon-caret{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 4px;
+    color: vars.$clr-white-blue;
+}
+
+.icon-drop{
+    width: 20px;
+    height: 20px;
+    color: vars.$clr-cian;
+    position: absolute;
+    margin-left: 139px;
+    margin-top: 14px;
+    pointer-events: none;
+}
+
+.icon-msu{
+    color: vars.$clr-white-blue !important;
+    margin-left: 52px !important;
+}
+
+.icon-ing{
+    margin-left: 172px !important;
+}
+
+.file-input{
+    width: 173px;
+    height: 48px;
+    border-radius: 15px 0 0 15px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, 28px, vars.$clr-cian);
+}
+
+.file-bg{
+    position:absolute;
+    width: 396px;
+    height: 48px;
+    background: linear-gradient(to right, hsla(0, 0%, 68%, 1) 173px, vars.$clr-white-blue 0px);
+    border-radius: 15px;
+    margin-top: 52px;
+    pointer-events: none;
+}
+
+.custom-files{
+    display: flex;
+    position: absolute;
+    width: 396px;
+    height: 48px;
+    margin-top: 52px;
+    pointer-events: none;
+    align-items: center;
+}
+
+.file-upload{
+    width: 173px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, vars.$fs-15, vars.$clr-white-blue);
+}
+
+.file-select{
+    width: 223px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, vars.$fs-15, vars.$clr-cian);
+}
+
+.custom-list{
+    width: 348px;
+    height: 48px;
+    border-radius: 15px 0 0 15px;
+    background: vars.$clr-white-blue;
+    padding: 5px;
+    border: none;
+    color: vars.$clr-black;
+}
+
+.more-list{
+    width: 48px;
+    height: 48px;
+}
+
+.btn-list{
+    width: 48px;
+    height: 48px;
+    background: vars.$clr-cian;
+    color: vars.$clr-white-blue;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0;
+}
+
+.btn-recipe{
+    width: 396px;
+    height: 48px;
+    border-radius: 15px;
+    background: vars.$clr-cian;
+    margin-top: 54px;
+    margin-bottom: 78px;
+    border: none;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, vars.$fs-18, vars.$clr-white-blue);
+}
+
+//users administration
+
+.sz-data{
+    height: 50px;
+    background: vars.$clr-cian;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, vars.$fs-15, vars.$clr-white-blue);
+}
+
+.sz-left{
+    width: 390px;
+    border-radius: 15px 0 0 15px;
+}
+
+.sz-right{
+    width: 390px;
+    border-radius: 0 15px 15px 0;
+}
+
+.sz-center{
+    width: 412px;
+}
+
+h3{
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, 17px, vars.$clr-white-blue);
+}
+
+.btn-arrow{
+    background: transparent;
+    border: none;
+}
+
+.custom-close{
+    width: 40px;
+    height: 40px;
+    color: vars.$clr-cian;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 62px;
+}
+
+.custom-close:hover{
+    color: vars.$clr-white-blue;
+}
+
+.s-name{
+    width: 335px;
+    height: 50px;
+    background: vars.$clr-cian;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, vars.$fs-15, vars.$clr-white-blue);
+}
+
+.s-categories{
+    width: 180px;
+    height: 50px;
+    background: vars.$clr-cian;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, vars.$fs-15, vars.$clr-white-blue);
+}
+
+.s-numbers{
+    width: 121px;
+    height: 50px;
+    background: vars.$clr-cian;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-med, vars.$fs-15, vars.$clr-white-blue);
+}
+
+.s-options{
+    width: 68px !important;
+    height: 50px;
+    background: vars.$clr-white-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: vars.$clr-cian;
+    text-decoration: none;
+}
+
+.us-title{
+    background: transparent;
+    text-align: center;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, vars.$fs-15, vars.$clr-white-blue);
+}
+
+.edit-icon{
+    font-size: 35px;
+    padding-bottom: 7px;
+}
+
+.delete-icon{
+    font-size: 40px;
+}
+
+.admin-log{
+    background: vars.$clr-cian !important;
+}
+
+.admin-sign{
+    border: solid 2px vars.$clr-black !important;
+    color: vars.$clr-black !important;
+}
+
+.admin-sign:hover{
+    background: vars.$clr-black;
+    color: vars.$clr-white-blue !important;
+}

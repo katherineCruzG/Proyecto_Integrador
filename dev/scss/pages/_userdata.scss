@@ -1,0 +1,67 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+@use '../abstracts/media-queries';
+
+.icon-log{
+    width: 55px;
+    height: 40px;
+    background: vars.$clr-orange;
+    border-radius: 10px 0 0 10px;
+}
+
+.size-icon{
+    width: 23px;
+    color: vars.$clr-white-blue;
+}
+
+.icon-msg{
+    width: 50px;
+    color: hsla(126, 93%, 32%, 1);
+}
+
+.input-log{
+    width: 355px;
+    height: 40px;
+    background: vars.$clr-gray;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 300px;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 335px;
+    }
+}
+
+.input-log:focus{
+    background: vars.$clr-gray;
+}
+
+.m-input{
+    margin-bottom: 24px;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        margin-bottom: 20px;
+    }
+}
+
+.custom-msg{
+    width: 600px; 
+    height: 281px;
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.border-msg{
+    border-radius: 50px;
+}

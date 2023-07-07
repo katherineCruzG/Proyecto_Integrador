@@ -1,0 +1,376 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+@use '../abstracts/media-queries';
+
+//background
+
+.bg-w{
+    width: 100%;
+    height: 59.375rem;
+    background: vars.$clr-white-blue;
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 0;
+        height: 0;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        height: 77.395rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        height: 70.375rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        height: 39.375rem;
+    }
+}
+
+.orange-bg{
+    position: absolute;
+    width: 100%;
+    height: 28.75rem;
+    background: vars.$clr-orange;
+    margin-top: 26.5rem;
+    @include media-queries.respond-to(media-queries.$phone){
+        margin-top: 16.75rem;
+        height: 378px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        margin-top: 46.5rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        margin-top: 41.5rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        margin-top: 18.5rem;
+        width: 100%;
+        height: 20.5rem;
+    }
+}
+
+//background
+
+//principal image
+
+.border-image{
+    position: absolute;
+    width: 56.72%;
+    height: 48.125rem;
+    background: vars.$clr-white-blue;
+    border-top-width: 0.25rem;
+    border-right-width: 0;
+    border-bottom-width: 0.25rem;
+    border-left-width: 0.25rem;
+    border-style: solid;
+    border-color: vars.$clr-orange;
+    border-top-left-radius: 26.25rem;
+    border-bottom-left-radius: 26.25rem;
+    margin-left: 43.28%;
+    margin-top: 1.813rem;
+    @include media-queries.respond-to(media-queries.$phone){
+        margin-left: 0;
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 100%;
+        height: 16.75rem;
+        border-right-width: 0.25rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 100%;
+        height: 33.125rem;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-top-left-radius: 0rem; 
+        border-bottom-left-radius: 0rem;
+        margin-left: 0;
+        margin-top: 17.813rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        height: 30.125rem;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-top-left-radius: 0rem; 
+        border-bottom-left-radius: 0rem;
+        margin-left: 0;
+        margin-top: 15.813rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        margin-top: 0.813rem;
+        margin-left: 44.28%;
+        height: 551px;
+        width: 55.68%;
+    }
+}
+
+.nw-image{
+    width: 96.22%;
+    height: 42.5rem;
+    border-top-left-radius: 26.25rem;
+    border-bottom-left-radius: 26.25rem;
+    margin-left: 2.563rem;
+    margin-top: 2.563rem;
+    object-fit: cover;
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 90%;
+        height: 14.125rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: 1.125rem;
+        margin-top: 1.125rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 100%;
+        height: 27.5rem;
+        border-top-left-radius: 0rem; 
+        border-bottom-left-radius: 0rem; 
+        margin-left: 0rem; 
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        height: 24.5rem;
+        border-top-left-radius: 0rem; 
+        border-bottom-left-radius: 0rem; 
+        margin-left: 0rem; 
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        height: 478px;
+        margin-left: 34px;
+        margin-top: 32px;
+        width: 95.22%;
+    }
+}
+
+//principal image
+
+//info about us
+
+.icon-click{
+    width: 2.313rem;
+    height: 2.313rem;
+    color: vars.$clr-black;
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 0;
+        height: 0;
+    } 
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 25px;
+        height: 25px;
+    }
+}
+
+//info about us
+
+//img principal
+
+.m-photos{
+    margin-top: 10.375rem;
+    margin-bottom: 5.25rem;
+    justify-content: center;
+    @include media-queries.respond-to(media-queries.$phone){
+        display: block !important;
+        margin-top: 4.063rem;
+        margin-bottom: 0;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        display: block !important;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        display: block !important;
+    }
+}
+
+.img-left{
+    width: 54rem;
+    height: 29rem;
+    border-radius: 2.188rem 0 0 2.188rem;
+    object-fit: cover;
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 100%;
+        height: 11.75rem;
+        border-radius: 2.188rem 2.188rem 0 0;
+        margin-bottom: 1.438rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 100%;
+        height: 25rem;
+        border-radius: 2.188rem 2.188rem 0 0;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        height: 20rem;
+        border-radius: 2.188rem 2.188rem 0 0;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 607px;
+        height: 330px;
+    }
+}
+
+.img-right{
+    width: 54rem;
+    height: 29rem;
+    border-radius: 0 2.188rem 2.188rem 0;
+    object-fit: cover;
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 100%;
+        height: 11.75rem;
+        border-radius: 0 0 2.188rem 2.188rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 100%;
+        height: 25rem;
+        border-radius: 0 0 2.188rem 2.188rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        height: 20rem;
+        border-radius: 0 0 2.188rem 2.188rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 607px;
+        height: 330px;
+    }
+}
+
+.circle-icon{
+    position: absolute;
+    width: 20.188rem;
+    height: 20.188rem;
+    background: vars.$clr-red;
+    margin-top: 4.5rem;
+    border-radius: 10.625rem;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 90%;
+        height: 5.625rem;
+        border-radius: 0;
+        margin-top: -15.313rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 90%;
+        height: 10.188rem;
+        margin-top: -481px;
+        border-radius: 0;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 90%;
+        height: 7.188rem;
+        margin-top: -378px;
+        border-radius: 0;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 231px;
+        height: 231px;
+        margin-top: 49px;
+    }
+}
+
+//img principal
+
+//icon >>
+
+.icon-more{
+    font-size: 2.125rem;
+    font-weight: vars.$fw-xbold;
+    margin-top: 0.188rem;
+    margin-left: 0.75rem;
+    @include media-queries.respond-to(media-queries.$phone){
+        font-size: 1.688rem;
+        margin-left: 0.188rem;
+    }
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 2px;
+    }
+}
+
+.icon-more:hover{
+    color: vars.$clr-orange;
+}
+
+.icon-show{
+    margin-left: 0.625rem !important;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        margin-left: 0px!important;
+    }
+}
+
+.icon-show:hover{
+    color: vars.$clr-white-blue !important;
+}
+
+//icon >>
+
+//image principal footer
+
+.img-cf{
+    width: 58.654rem;
+    height: 42.817rem;
+    margin-top: 3.875rem;
+    position: absolute;
+    //margin-left: 49.313rem;
+    @include media-queries.respond-to(media-queries.$phone){
+        position: relative;
+        width: 110%;
+        height: auto;
+        margin-left: -5%;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 669px;
+        height: auto;
+        margin-top: 53px;
+        margin-left: 569px;
+    }
+}
+
+//image principal footer
+
+//register free
+
+.mt-r{
+    margin-top: 0.125rem;
+    @include media-queries.respond-to(media-queries.$phone){
+        margin-top: 0.438rem;
+    }
+}
+
+//register free

@@ -1,0 +1,336 @@
+@use 'vars';
+@use 'media-queries';
+
+//fonts
+
+@mixin set-font($ffamily, $fweight, $fsize, $fcolor:vars.$clr-black){
+    font-family: $ffamily;
+    font-weight: $fweight;
+    font-size: $fsize;
+    color: $fcolor;
+}
+
+//buttons
+
+@mixin button-nav($bg, $color){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-reg;
+    font-size: vars.$fs-20;
+    color: $color;
+    margin-top: 0.5rem;
+    border: none;
+    background: $bg;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 100%;
+        margin-top: 1.438rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        margin-top: 1.438rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: vars.$fs-15;
+    }
+}
+
+@mixin button-menu($bg, $color){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-reg;
+    font-size: vars.$fs-20;
+    color: $color;
+    margin-top: 0.5rem;
+    border: none;
+    background: $bg;
+    height: auto;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 100%;
+        margin-top: 1.438rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        margin-top: 1.438rem;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: vars.$fs-15;
+    }
+}
+
+@mixin button-user($bg, $color){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-reg;
+    font-size: vars.$fs-20;
+    color: $color;
+    width: 8.125rem;
+    margin-top: 18px;
+    border: none;
+    background: $bg;
+    text-align: center;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 115px;
+        margin-top: 3px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 115px;
+        margin-top: 3px;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: vars.$fs-15;
+        margin-top: 13px;
+    }
+}
+
+@mixin button-search($bg, $color, $borderc){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-reg;
+    font-size: vars.$fs-20;
+    color: $color;
+    width: 6.563rem;
+    height: 2.125rem;
+    background: $bg !important;
+    border: solid 0.125rem $borderc !important;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 25.43%;
+        height: 34px;
+        font-size: 16px;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 80px;
+        height: 28px;
+        font-size: vars.$fs-15;
+    }
+}
+
+@mixin button-newest($bg, $color){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-sbold;
+    font-size: vars.$fs-30;
+    color: $color !important;
+    border: none;
+    background: $bg;
+    width: 41.688rem;
+    height: 3.438rem;
+    border-radius: 0.938rem;
+    margin-top: 0.875rem;
+    @include media-queries.respond-to(media-queries.$phone){
+        font-size: vars.$fs-20;
+        width: 100%;
+        height: 3.438rem;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 100%;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        font-size: vars.$fs-26;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: 21px;
+        width: 30rem;
+        height: 39px;
+        border-radius: 11px;
+        margin-top: 4px;
+    }
+}
+
+@mixin button-show($bg, $color:vars.$clr-black){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-med;
+    font-size: vars.$fs-22;
+    color: $color;
+    border: none;
+    background: $bg;
+    margin-top: 1.5rem;
+    align-items: center;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        font-size: vars.$fs-20;
+        padding-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: 16px;
+        margin-top: 14px;
+    }
+}
+
+@mixin button-more($bg, $color){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-reg;
+    font-size: vars.$fs-26;
+    color: $color;
+    border: none;
+    background: $bg;
+    padding-top: 6.938rem;
+    justify-content: center;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        font-size: vars.$fs-20;
+        padding-top: 0;
+        margin: auto;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        padding-top: 1.938rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        padding-top: 1.938rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: 20px;
+        padding-top: 123px;
+    }
+}
+
+@mixin button-register($bg, $borderc, $color:vars.$clr-black){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-med;
+    font-size: vars.$fs-26;
+    color: $color;
+    width: 155px;
+    height: 47px;
+    border: solid 3px $borderc;
+    border-radius: 25px;
+    margin-left: 15px;
+    background: $bg;
+
+    @include media-queries.respond-to(media-queries.$phone){
+        font-size: 22px;
+        margin-left: 5px;
+    }
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: 20px;
+        width: 109px;
+        height: 39px;
+    }
+}
+
+@mixin button-close($bg, $color:vars.$clr-black){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-med;
+    font-size: vars.$fs-22;
+    color: $color;
+    background: $bg;
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding-top: 2px;
+}
+
+@mixin button-categories($bg, $color:vars.$clr-black){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-reg;
+    font-size: vars.$fs-20;
+    color: $color;
+    background: $bg;
+    display: block;
+    width: 206px;
+    height: 45px;
+    padding-top: 7px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-bottom: 36px;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        font-size: 15px;
+        width: 145px;
+        height: 32px;
+        padding-top: 4px;
+        border-radius: 10px;
+        margin-bottom: 35px;
+        margin-top: -14px;
+    }
+    @include media-queries.respond-to(media-queries.$phone){
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@mixin button-sign($bg, $borderc, $color:vars.$clr-black){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-med;
+    font-size: vars.$fs-15;
+    color: $color;
+    width: 83px;
+    height: 28px;
+    border: solid 2px $borderc;
+    border-radius: 26px;
+    margin-left: 15px;
+    background: $bg;
+}
+
+@mixin button-out($bg, $color:vars.$clr-black){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-med;
+    font-size: 1rem;
+    color: $color;
+    width: 120px;
+    height: 34px;
+    border-radius: 12px;
+    border: none;
+    background: $bg;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+@mixin button-next($bg, $color:vars.$clr-black){
+    font-family: vars.$ff-primary;
+    font-weight: vars.$fw-med;
+    font-size: vars.$fs-22;
+    color: $color;
+    background: $bg;
+    width: 96%;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 91%;
+    }
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 91%;
+    }
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 100%;
+    }
+}

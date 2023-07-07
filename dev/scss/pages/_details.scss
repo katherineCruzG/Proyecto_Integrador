@@ -1,0 +1,200 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+@use '../abstracts/media-queries';
+
+//img recipe details
+
+.img-details{
+    width: 100%;
+    height: 782px;
+    object-fit: cover;
+    margin-top: 31px;
+    border-radius: 25px;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        margin-top: 17px;
+        height: 557px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        height: 415px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        height: 300px;
+    }
+
+    @include media-queries.respond-to(media-queries.$phone){
+        height: 240px;
+    }
+}
+
+.circle-top{
+    display: flex;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: vars.$clr-white-blue;
+    border-radius: 40px;
+    margin-top: 170px;
+    @include mixins.set-font(vars.$ff-primary, vars.$fw-sbold, vars.$fs-42, vars.$clr-red);
+
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 60px;
+        height: 60px;
+        margin-top: 120px;
+        font-size: 33px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 65px;
+        height: 65px;
+        margin-top: 158px;
+        font-size: 36px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 65px;
+        height: 65px;
+        margin-top: 158px;
+        font-size: 36px;
+    }
+
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 65px;
+        height: 65px;
+        margin-top: 145px;
+        font-size: 35px;
+    }
+}
+
+//img recipe details
+
+//info recipe
+
+.details-name{
+    width: 80%;
+    height: 160px;
+    background: hsla(0, 0%, 15%, 0.50);
+    position: absolute;
+    margin-top: 342px;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        height: 113px;
+        margin-top: 239px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        height: 90px;
+        margin-top: 194px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 100%;
+        height: 90px;
+        margin-top: 372px;
+        margin-left: -10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    @include media-queries.respond-to(media-queries.$phone){
+        display: block !important;
+        margin-left: -10%;
+        width: 100%;
+        margin-top: 300px;
+        height: 125px;
+    }
+}
+
+.m-details{
+    margin-top: 72px;
+    margin-bottom: 44px;
+    @include media-queries.respond-to(media-queries.$phone){
+        margin-top: 182px;
+    }
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        margin-top: 170px;
+    }
+}
+
+.m-dtk{
+    margin-top: -9px;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        margin-top: -6px;
+    }
+
+    @include media-queries.respond-to(media-queries.$phone){
+        margin-top: 0px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        margin-top: 0px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        margin-top: 0px;
+    }
+}
+
+.heart-dt{
+    width: 59px;
+    height: 59px;
+    color: vars.$clr-cian;
+    margin-right: 14px;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 40px;
+        height: 40px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        width: 50px;
+        height: 50px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        width: 47px;
+        height: 47px;
+    }
+}
+
+.dt-gap{
+    gap: 100px;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        gap: 25px;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.mb-ins{
+    margin-bottom: 44px;
+}
+
+
+//info recipe
+
+//related recipes
+
+.info-related{
+    width: 19.438rem;
+    height: 158px;
+    position: absolute;
+    margin-top: -151px;
+    @include media-queries.respond-to(media-queries.$phone){
+        width: 80%;
+    }
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 222px;
+        height: 158px;
+        margin-top: -151px;
+    }
+}
+
+//related recipes

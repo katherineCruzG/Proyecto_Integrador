@@ -1,0 +1,144 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+@use '../abstracts/media-queries';
+
+//navbar
+.btn-nav{
+    @include mixins.button-nav(transparent, vars.$clr-white);
+}
+
+.btn-nav:hover{
+    @include mixins.button-nav(transparent, vars.$clr-orange);
+}
+
+.btn-nav:active{
+    @include media-queries.respond-to(media-queries.$phone){
+        @include mixins.button-nav(transparent, vars.$clr-orange);
+    }
+}
+
+.btn-menu{
+    @include mixins.button-menu(transparent, vars.$clr-white);
+}
+
+.btn-menu:hover{
+    @include mixins.button-menu(transparent, vars.$clr-orange);
+}
+
+.btn-menu:active{
+    @include mixins.button-menu(transparent, vars.$clr-cian);
+}
+
+.btn-do{
+    @include mixins.button-categories(vars.$clr-red, vars.$clr-white-blue);
+}
+
+.btn-category{
+    @include mixins.button-categories(vars.$clr-cian, vars.$clr-white-blue);
+}
+
+.btn-user{
+    @include mixins.button-user(transparent, vars.$clr-white);
+}
+
+.btn-user:hover{
+    @include mixins.button-user(transparent, vars.$clr-orange);
+}
+
+.btn-search{
+    @include mixins.button-search(transparent, vars.$clr-white-blue, vars.$clr-white-blue);
+}
+
+.btn-search:hover{
+    @include mixins.button-search(vars.$clr-orange, vars.$clr-white-blue, vars.$clr-orange);
+}
+
+.btn-search:active{
+    @include mixins.button-search(vars.$clr-orange, vars.$clr-white-blue, vars.$clr-orange);
+}
+//navbar
+
+//principal
+.btn-show{
+    @include mixins.button-show(transparent, vars.$clr-black);
+}
+
+.btn-show:hover{
+    @include mixins.button-show(transparent, vars.$clr-white-blue);
+}
+
+.btn-newest{
+    @include mixins.button-newest(vars.$clr-white-blue85, vars.$clr-red);
+}
+
+.btn-newest:hover{
+    @include mixins.button-newest(vars.$clr-white-blue85, vars.$clr-cian);
+}
+
+.btn-more{
+    @include mixins.button-more(transparent, vars.$clr-cian);
+}
+
+.btn-register{
+    @include mixins.button-register(transparent, vars.$clr-cian);
+}
+
+.btn-register:hover{
+    @include mixins.button-register(vars.$clr-cian, vars.$clr-cian, vars.$clr-white-blue);
+}
+//principal
+
+//modal
+.btn-cmodal{
+    @include mixins.button-close(vars.$clr-red, vars.$clr-white-blue);
+}
+
+.btn-cmodal:hover{
+    @include mixins.button-close(vars.$clr-cian, vars.$clr-white-blue);
+}
+
+.btn-ok{
+    @include mixins.button-close(hsla(126, 93%, 32%, 1), vars.$clr-white-blue);
+}
+
+.btn-ok:hover{
+    @include mixins.button-close(vars.$clr-cian, vars.$clr-white-blue);
+}
+//modal
+
+
+//log
+.btn-next{
+    @include mixins.button-next(vars.$clr-red, vars.$clr-white-blue);
+}
+
+.btn-sign{
+    @include mixins.button-sign(transparent, vars.$clr-cian, vars.$clr-cian);
+}
+
+.btn-sign:hover{
+    @include mixins.button-sign(vars.$clr-cian, vars.$clr-cian, vars.$clr-white-blue);
+}
+
+.btn-out{
+    @include mixins.button-out(vars.$clr-cian, vars.$clr-white-blue);
+}
+
+.btn-out:hover{
+    @include mixins.button-out(vars.$clr-red, vars.$clr-white-blue);
+}
+//log
+
+//card
+.btn-heart{
+    position: absolute;
+    display: block;
+    width: 76px;
+    height: 66px;
+    border: none;
+    background: transparent;
+    @include media-queries.respond-to(media-queries.$large-desktop){
+        width: 66px;
+        height: 56px;
+    }
+}
